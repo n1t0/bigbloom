@@ -1,0 +1,18 @@
+[package]
+name = "bigbloom"
+version = "0.1.0"
+authors = ["MOI Anthony <m.anthony.moi@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "bigbloom"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.2.0"
+
+[dependencies]
+neon = "0.2.0"
+bloom = "0.3.2"

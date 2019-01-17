@@ -1,0 +1,15 @@
+{
+  "name": "bigbloom",
+  "version": "0.1.0",
+  "description": "Memory effective Bloom-filter implementation for huge datasets",
+  "main": "lib/index.js",
+  "types" : "lib/index.d.ts",
+  "author": "Anthony Moi <m.anthony.moi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.2.0"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
