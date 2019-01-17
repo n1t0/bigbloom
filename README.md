@@ -33,6 +33,11 @@ filter.contains("foo"); // true
 filter.insert("foo");   // false, already inserted
 ```
 
+This also works in typescript
+```typescript
+import { BloomFilter } from 'bigbloom';
+```
+
 ## TODO
 - Add some simple tests
 - Add travis for tests and publishing binaries

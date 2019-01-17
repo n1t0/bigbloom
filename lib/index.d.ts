@@ -1,5 +1,5 @@
 declare module "bigbloom" {
-	export default class BloomFilter {
+	export class BloomFilter {
 		capacity: number;
 		errorRate: number;
 		bits: number;
