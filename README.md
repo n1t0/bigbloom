@@ -36,5 +36,4 @@ filter.insert("foo");   // false, already inserted
 ## TODO
 - Add some simple tests
 - Add travis for tests and publishing binaries
-- Make sure typescript declaration works well
 - Update package.json for npm publishing

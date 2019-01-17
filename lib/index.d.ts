@@ -1,12 +1,14 @@
-declare class BloomFilter {
-	constructor(capacity: number, errorRate: number = 0.01);
-	
-	get capacity(): number;
-	get errorRate(): number;
-	get bits(): number;
-	get hashes(): number;
-	
-	insert(element: string | number): boolean;
-	contains(element: string | number): boolean;
-	clear();
+declare module "bigbloom" {
+	export default class BloomFilter {
+		capacity: number;
+		errorRate: number;
+		bits: number;
+		hashes: number;
+		
+		constructor(capacity: number, errorRate: number);
+		
+		insert(element: string | number): boolean;
+		contains(element: string | number): boolean;
+		clear(): void;
+	}
 }
